@@ -1,0 +1,28 @@
+.products-sections {
+    display: flex;
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.products-sections .products-section-part {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.products-sections .topic-text {
+    font-family: inherit;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-primary-color);
+}
+
+.products-sections .products {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+

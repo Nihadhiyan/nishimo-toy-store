@@ -1,0 +1,245 @@
+/* Login page stylings */
+
+body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: fit-content;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: var(--element-bg-color);
+    box-shadow: var(--fixed-element-defferenciate-box-shadow);
+}
+
+/* logo */
+.login-form-container .logo-with-name-slogan {
+        flex-direction: column;
+}
+
+.login-form-container .logo-name-slogan {
+    align-items: center;
+    min-width: 370px;
+}
+
+.logo-web-experience-text {
+    text-align: center;
+    color: var(--text-primary-color);
+}
+
+.login-form-container .full-logo {
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+/* headings */
+
+.signin-text{
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-primary-color);
+}
+
+.privacy-confirmation-text {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--success-color);
+    text-align: center;
+}
+
+.privacy-confirmation-text i {
+    font-size: 14px;
+    color: var(--success-color);
+    margin-right: 2px;
+}
+
+/* Form Styles */
+
+.login-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    margin-top: 32px
+}
+
+.login-form-container label {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-form-container input {
+    width: 100%;
+    height: 38px;
+    padding: 8px 8px;
+}
+
+.login-form-container input::placeholder {
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--text-muted-color);
+    font-weight: 400;
+}
+
+.login-form-container input[type="email"], .login-form-container input[type="password"] {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: var(--small-element-normal-box-shadow);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-primary-color);
+}
+
+.login-form-container input[type="email"] {
+    margin-bottom: 16px;
+}
+
+.login-form-container input[type="email"]:hover, .login-form-container input[type="password"]:hover {
+    box-shadow: var(--small-element-hover-box-shadow);
+}
+
+.login-form-container input[type="email"]:focus-within, .login-form-container input[type="password"]:focus-within {
+    outline: none;
+    border-color: var(--input-border);
+}
+
+
+.forget-password-link {
+    color: var(--link-color);
+    font-family: inherit;
+    font-size: 16px;
+    transition: all ease-in-out 0.2s;
+}
+
+.forget-password-link-container {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    text-align: end;
+}
+
+.forget-password-link:hover {
+    color: var(--link-hover-color);
+}
+
+/* Buttons  */
+
+.login-form-container .login-button {
+    cursor: pointer;
+}
+
+/* divider */
+
+.login-form-container .divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.login-form-container .divider span {
+    margin-right: 8px;
+    margin-left: 8px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 4px;
+    color: var(--text-muted-color);
+}
+
+hr {
+  flex: 1;
+  height: 2px;
+  border: none;
+  background-color: var(--border-color);
+}
+
+.login-form-container .social-sign-up-part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.login-form-container .social-sign-up-part button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--element-bg-color);
+    box-shadow: var(--small-element-normal-box-shadow);
+    border-radius: 6px;
+    color: var(--text-primary-color);
+    transition: all ease-in-out 0.3s;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.login-form-container .social-sign-up-part .google-signup-button {
+    height: 45px;
+}
+
+.login-form-container .social-sign-up-part button img {
+    height: 40px;
+    width: 40px;
+}
+
+.login-form-container .social-sign-up-part button .facebook-logo {
+    height: 35px;
+    width: 35px;
+}
+
+.login-form-container .social-sign-up-part button:hover {
+    box-shadow: var(--small-element-hover-box-shadow);
+}
+
+.login-form-container .privacy-policy-text, .login-form-container .signup-link-text {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 48px;
+    color: var(--text-muted-color);
+}
+
+.login-form-container .privacy-policy-text a, .login-form-container .signup-link-text a {
+    color: var(--link-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.login-form-container .privacy-policy-text a:hover, .login-form-container .signup-link-text a:hover {
+    color: var(--link-hover-color);
+}
+
+.login-form-container .signup-link-text {
+    margin-top: 24px;
+    color: var(--text-primary-color);
+}
+
+.footer-copyright {
+    color: var(--text-muted-color);
+    background-color: transparent;
+    text-align: center;
+}

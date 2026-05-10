@@ -1,0 +1,122 @@
+/* quick navigation part stylings */
+
+.quick-cats {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+/* Background video */
+.bg-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+/* Navibation bar */
+.quick-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border-radius: 50px;
+    width: fit-content;
+    height: 100px;
+    background-color: var(--element-bg-color);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: var(--blue-always-box-shadow);
+    transition: all ease-in-out 0.2s;
+    min-width: 1055px;
+}
+
+.quick-nav-links li a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-primary-color);
+    font-family: inherit;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all ease-in-out 0.2s;
+}
+
+.quick-nav-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--border-color);
+    padding: 0 40px;
+    height: 100%;
+    transition: all ease-in-out 0.2s;
+}
+
+.quick-nav-links li:first-child {
+    border-radius: 80px 0 0 80px;
+}
+
+.quick-nav-links li:last-child {
+    border-radius: 0 80px 80px 0;
+    border-right: none;
+}
+
+.quick-nav-links:hover {
+    box-shadow: var(--blue-hover-box-shadow);
+}
+
+.quick-nav-links li:hover {
+    box-shadow: var(--blue-hover-inside-box-shadow);
+}
+
+.quick-nav-links li:hover a {
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 1450px) {
+    .quick-nav-links {
+        flex-direction: column;
+        height: auto;
+        min-width: 260px;
+        padding: 10px 20px;
+    }
+    
+    .quick-nav-links li {
+        border-right: none;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .quick-nav-links li:first-child, .quick-nav-links li:last-child {
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,122 @@
+/* Product Card Stylings */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 420px;
+    width: 300px;
+    padding: 16px 16px;
+    background-color: var(--element-bg-color);
+    box-shadow: var(--small-element-normal-box-shadow);
+    gap: 16px;
+    transition: all ease-in-out 0.3s;
+}
+
+    /* Product Cart Hover */
+
+.product-card:hover {
+    box-shadow: var(--big-elements-hover-box-shadow);
+}
+
+/* Product Image Styles */
+
+.product-card .product-image {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+}
+
+.product-card .product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Details Text Styles */
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    width: 100%;
+}
+
+.product-card .product-name {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-primary-color);
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    min-height: 48px;
+}
+
+.product-card .product-category {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--text-muted-color);
+}
+
+.product-card .product-price {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 12px;
+}
+
+/* Product Buttons  */
+
+.product-card .product-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-card .add-to-cart-button {
+    padding: 8px 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--text-inside-primary);
+    transition: all ease-in-out 0.5s;
+}
+
+.product-card .favourite-button {
+    border: none;
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+    height: fit-content;
+    width: fit-content;
+}
+
+.product-card .favourite-button i {
+    color: var(--text-primary-color);
+    transition: all ease-in-out 0.3s;
+    font-size: 20px;
+}
+
+    /* Button Hover Effects  */
+
+.product-card .add-to-cart-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.product-card .favourite-button:hover i {
+    color: var(--error-color);
+    transform: scale(1.1);
+}

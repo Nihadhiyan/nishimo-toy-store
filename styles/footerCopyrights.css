@@ -1,0 +1,8 @@
+/* footer copyrights stylings */
+
+.footer-copyright {
+    background-color: var(--text-primary-color);
+    color: var(--text-inside-primary);
+    height: 25px;
+    padding-left: 16px;
+}

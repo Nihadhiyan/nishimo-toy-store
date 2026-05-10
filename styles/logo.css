@@ -1,0 +1,68 @@
+/* Logo stylings */
+
+.full-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.full-logo a {
+    text-decoration: none;
+}
+
+/* Logo */
+.logo-container {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.logo-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+
+.logo-container:hover img {
+    transform: scale(1.2);
+}
+
+.logo-with-name-slogan {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-name-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.logo-with-name-slogan .logo-container {
+    min-height: 120px;
+    min-width: 120px;
+    border-radius: 60px;
+    
+}
+
+.logo-shop-name {
+    color: var(--primary-color);
+}
+
+.logo-slogan {
+    color: var(--secondary-color);
+}
+
+.logo-web-experience-text {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-inside-primary);
+}

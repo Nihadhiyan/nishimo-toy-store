@@ -1,0 +1,94 @@
+/* Buttons stylings */
+.categories-button,
+.login-button {
+    padding: 8px 8px 10px 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--text-inside-primary);
+    transition: all ease-in-out 0.4s;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.login-button {
+    text-decoration: none;
+}
+
+.categories-button:hover,
+.login-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.categories-button i {
+    color: var(--text-inside-primary);
+    transition: all ease-in-out 0.5s;
+}
+
+.categories-button:hover i {
+    color: var(--primary-color);
+}
+
+.login-button:focus,
+.categories-button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.quantity-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    gap: 8px;
+    background-color: var(--element-bg-color);
+    box-shadow: var(--small-element-normal-box-shadow);
+    height: fit-content;
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.quantity-button button{
+    border: none;
+    background-color: transparent;
+    color: var(--text-muted-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.quantity-button input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.quantity-button input:focus-within {
+    outline: none;
+}
+
+.checkout-button {
+    background-color: var(--primary-color);
+    color: var(--text-inside-primary);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: var(--element-bg-color);
+    color: var(--primary-color);
+}

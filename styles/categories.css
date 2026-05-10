@@ -1,0 +1,105 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 16px 32px;
+    gap: 32px;
+}
+
+.categories .shop-by-category-text {
+    font-family: inherit;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-primary-color);
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 32px;
+}
+
+.categories ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.categories ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all ease-in-out 0.5s;
+}
+
+.categories ul li .category-photo-holder {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    box-shadow: var(--defferenciate-box-shadow);
+    transition: all ease-in-out 0.4s;
+}
+
+.categories ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+}
+
+.categories ul li:hover img{
+    transform: scale(1.1);
+}
+
+.categories ul li:hover .category-photo-holder {
+    box-shadow: var(--big-elements-hover-box-shadow);
+}
+
+.categories ul li:hover a {
+    font-weight: 600;
+    text-shadow: var(--text-hover-shadow);
+}
+
+@media (max-width: 1450px) {
+    .categories {
+        margin-top: 32px;
+    }
+}
+
+@media(max-width: 1140px)  {
+    .categories {
+        margin-top: 32px;
+        gap: 8px;
+    }
+
+    .categories ul  {
+        gap: 4px;
+    }
+
+    .categories ul li  {
+        transform: scale(0.8);
+        padding: 4px;
+    }
+
+    .categories .shop-by-category-text {
+        font-size: 35px;
+    }
+}
+

@@ -1,0 +1,99 @@
+/* all styling here */
+
+/**variables*/
+:root {
+  /* Brand Colors */
+/* Primary Branding */
+    --primary-color: #2563EB;             /* Royal Blue */
+    --primary-light: #60A5FA;             /* Sky Blue */
+
+    /* Secondary Accent */
+    --secondary-color: #FBBF24;           /* Sunflower Yellow */
+    --secondary-light: #FDE68A;           /* Light Yellow */
+
+    /* Playful Accent Colors */
+    --accent-pink: #F472B6;               /* Cute Pink */
+    --accent-green: #34D399;              /* Soft Mint Green */
+
+    /* Backgrounds */
+    --background-color: #FDFCFB;          /* Cream White */
+    --element-bg-color: #FFFFFF;          /* Pure White */
+
+    /* Text */
+    --text-inside-primary: #FFFFFF;
+    --text-primary-color: #1F2937;        /* Rich Gray */
+    --text-muted-color: #6B7280;
+    --title-color: #1E40AF;               /* Deep Blue for Headings */
+    --subtitles-color: #6B7280;
+    --text-hover-color: #0042ad;
+
+    /* Borders & Inputs */
+    --border-color: #E5E7EB;
+    --input-border: #A1A1AA;
+
+    /* Links */
+    --link-color: #2563EB;
+    --link-hover-color: #3B82F6;
+
+    /* Status */
+    --error-color: #EF4444;
+    --success-color: #10B981;
+
+    /* Shadows */
+    --fixed-element-defferenciate-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --big-elements-hover-box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
+    --small-element-normal-box-shadow: 1px 1px 10px rgba(24, 24, 24, 0.1);
+    --small-element-hover-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --text-hover-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+
+    /* Blue Glow Effects */
+    --blue-always-box-shadow: 1px 2px 20px 3px rgba(26, 115, 232, 0.5); 
+    --blue-hover-box-shadow: 2px 3px 20px 1px rgba(26, 115, 232, 0.6);
+    --blue-hover-inside-box-shadow: inset 2px 2px 20px 3px rgba(26, 115, 232, 0.4);
+}
+
+
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Stylings */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    font-size: 16px;
+    color: var(--text-primary-color);
+}
+
+/* Tags General stylings */
+p {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, input, button {
+    padding: 0;
+    margin: 0;
+}
+
+i {
+    color: var(--text-primary-color);
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media(max-width: 920px) {
+    body {
+        padding-left: 220px;
+    }
+}
